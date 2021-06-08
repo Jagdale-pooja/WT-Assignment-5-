@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width , initial-scale=1.0">
+    <title>set schedule</title>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .bg {
+          /* The image used */
+          background-image: url("background.JPG");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .content {
+              max-width: 00px;
+              margin: auto;
+              padding: 10px;  
+            }
+        </style>
+</head>
+<body class="bg">
+    <div> class="content"</div>
+    <form action="">
+        <table align="center" bgcolor="#A9A9A9" height="550" width="550" action="pooja.php" method="POST">
+            <tr>
+                <td><h1><i>Scheduling</i></h1></td>
+                <td>:</td>
+            </tr>
+            <tr>
+                <td style="font-size:23px;"><i>Task</i></td>
+                <td><b>:</b></td>
+                <td><input type="text" placeholder="task" size="40" required></td>
+            </tr>
+            <tr>
+                <td style="font-size:23px;"><i>Starting_Date</i></td>
+                <td><b>:</b></td>
+                <td>
+                    <input type="date" id="myDate" required>
+                    <p id="demo"></p>
+
+                <script>
+                    function myFunction()
+                     {
+                        var x = document.getElementById("myDate").value;
+                        document.getElementById("demo").innerHTML = x;
+                     }
+                </script>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:23px;"><i>Starting_Time</i></td>
+                <td><b>:</b></td>
+                <td><input type="text" placeholder="Time" size="40" required></td>
+            </tr>
+            <tr>
+                <td style="font-size:23px;"><i>Due_Date</i></td>  
+                <td><b>:</b></td>
+                <td>
+                    <input type="date" id="myDate" required>
+                    <p id="demo"></p>
+
+                <script>
+                    function myFunction()
+                     {
+                        var x = document.getElementById("myDate").value;
+                        document.getElementById("demo").innerHTML = x;
+                     }
+                </script>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:23px;"><i>Due_Time</i></td>
+                <td><b>:</b></td>
+                <td><input type="text" placeholder="Time" size="40" required>
+                   <!---  <form>
+                        <label for="appt">Select a time:</label>
+                        <input type="time" id="appt" name="appt">
+                    </form>
+                --->
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="set schedule"></td>
+                <td><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
